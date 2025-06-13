@@ -13,4 +13,13 @@
     <bean id="myCar" class="com.constructor.injection.Car">
         <constructor-arg ref="specification"/>
     </bean>
+
+    <bean id="specificationSetter" class="com.setter.injection.Specification">
+        <property name="make" value="BMW"/>
+        <property name="model" value="XM Hybrid"/>
+    </bean>
+
+    <bean id="myCar1" class="com.setter.injection.Car">
+        <property name="specification" ref="specificationSetter"/>
+    </bean>
 </beans>

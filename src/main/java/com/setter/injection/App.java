@@ -1,4 +1,4 @@
-package com.constructor.injection;
+package com.setter.injection;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,7 +9,7 @@ public class App {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationInjectionContext.xml");
 
-        Car car = (Car)context.getBean("myCar");
+        Car car = (Car)context.getBean("myCar1");
         System.out.println("My Car Details : " + car.displayCarSpecification());
     }
 }
