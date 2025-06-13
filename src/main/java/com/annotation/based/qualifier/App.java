@@ -1,8 +1,5 @@
 package com.annotation.based.qualifier;
 
-import com.annotation.based.autowire.Department;
-import com.annotation.based.autowire.Employee;
-import com.annotation.based.autowire.Manager;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
